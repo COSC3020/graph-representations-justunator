@@ -11,7 +11,7 @@ function convertToAdjMatrix(adjList) {
     return adjMat;
 }
 
-console.log(convertToAdjMatrix([[ 1, 4 ], [ 0, 2, 3, 4 ], [ 1, 3 ], [ 1, 2, 4 ], [ 0, 1, 3 ]])) // debugging
+//console.log(convertToAdjMatrix([[ 1, 4 ], [ 0, 2, 3, 4 ], [ 1, 3 ], [ 1, 2, 4 ], [ 0, 1, 3 ]])) // debugging
 
 function convertToAdjList(adjMat) {
     var v = adjMat.length
