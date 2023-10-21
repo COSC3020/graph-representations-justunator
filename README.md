@@ -16,7 +16,11 @@ depend on the number of vertices, the number of edges, or both?
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
+The runtime complxeity should depend on both edges and vertices as it should scale with V to create a V by V matrix, so $\Theta(V^2)$. The actual conversion from list to matrix and swapping the 0s with 1s, it should be $\Theta(V + E)$ time as for each vertex, it checks the same vertex within the list and swaps the edges that already exist. It does not actually check every possible possible in the matrix so it can not be $V^2$.
+
 ## Bonus
 
 Implement a function to convert an adjacency matrix to an adjacency list and
 analyze it as above.
+
+Converting from matrix to list should take $\Theta(V^2)$ time as it needs to read through every position of the matrix to see if it is actually an edge that exists before it can put the edge into the adjacent List.
